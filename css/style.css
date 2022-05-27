@@ -15,15 +15,73 @@ body {
   color: #333333;
 }
 
+/* @ */
 hr {
-  background-color: #e93f91;
+  background-color: #fb1283;
   height: 1px;
-  margin: 20px auto;
-  animation: hr_width ease-in-out 3s infinite;
+  margin: 0 auto 80px auto;
+  animation: hr_width ease-in-out 5s infinite;
 }
 
 /* ≃+------------------------------------- */
+/* ≃≃# Navegadora Lateral */
+.nav_lateral {
+  position: fixed;
+  top: calc(50vh - 90px);
+  right: 3px;
+  display: flex;
+  flex-direction: column;
+  width: 48px;
+  height: 180px;
+  opacity: 0.2;
+}
 
+/* ≃*Nav lateral em hover */
+.nav_lateral:hover {
+  opacity: 1;
+}
+
+.nav_lateral a {
+  margin: 3px auto;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border-bottom: black solid 5px;
+  border-top: black solid 5px;
+  animation: rotate 6s ease-in-out infinite;
+}
+/* ≃≃≃# Círculos da nav lateral: */
+.pink {
+  border-right: #f36a71 solid 5px;
+  border-left: solid 5px #f36a71;
+}
+.white {
+  border-right: yellow solid 5px;
+  border-left: solid 5px yellow;
+}
+.green {
+  border-right: #00a78e solid 5px;
+  border-left: solid 5px #00a78e;
+}
+.gray {
+  border-right: #787c7e solid 5px;
+  border-left: solid 5px #787c7e;
+}
+.blue {
+  border-right: #374676 solid 5px;
+  border-left: solid 5px #374676;
+}
+.blueviolet {
+  border-right: #455ee1 solid 5px;
+  border-left: solid 5px #455ee1;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 /* ≃≃≃# Section e a Main */
 .section_intro {
   width: 100%;
@@ -38,6 +96,9 @@ hr {
   justify-content: start;
   align-items: center;
   background-color: #333333;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 span {
@@ -67,11 +128,33 @@ span {
   color: #000000;
 }
 
-/* >git  MAKED: section introdutória com texto e paddings estilizados, cor de texto 3333333. WILL: escolher uma fonta mais parecida com --Fern Micro-- ;2750120 */
-/* >git PAST: cor definida para o titulo projetos */
 /* ≃≃# Main: projetos */
 main {
   width: 100%;
+}
+
+.article_projetos {
+  padding-bottom: 5em;
+}
+
+/* ≃≃≃#Article projetos por COR , definindo BORDAS*/
+#pink {
+  border-left: solid 4.3px #f36a71;
+}
+#green {
+  border-left: solid 4.3px #00a78e;
+}
+#white {
+  border-left: solid 4.3px yellow;
+}
+#blue {
+  border-left: solid 4.3px #374676;
+}
+#gray {
+  border-left: solid 4.3px #787c7e;
+}
+#blueviolet {
+  border-left: solid 4.3px #455ee1;
 }
 
 /* ≃≃≃# Título */
@@ -91,7 +174,6 @@ main h2 {
   padding: 1.3em;
 }
 
-/* >git PAST: adicionado fundo à imagem. inserido hr entre articles.  padding adiconado nos próprios paragrafos. criado animação que muda o tamanho das minhas hr. 27050227 */
 .img_projeto {
   transform: rotateZ(-8deg);
   width: 70vmin;
