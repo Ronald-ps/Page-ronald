@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Portifólio</title>
+    <title>Meu Portfólio</title>
     <link rel="stylesheet" href="./css/style.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -16,9 +20,9 @@
     <!-- ≃≃≃# Barra de navegação -->
 
     <nav class="nav_superior">
-      <span>Sobre mim</span>
-      <span>Projetos</span>
-      <span>Contato</span>
+      <a>Sobre mim</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
     </nav>
 
     <!-- ≃≃≃# Barra de navegação LATERAL -->
@@ -32,7 +36,7 @@
     </nav>
     <!-- @ -->
     <!-- ≃≃≃# ----------------------------------------------------------- -->
-    <h1>Meu portifólio. Ass: Ronald</h1>
+    <h1>Meu portfólio. Ass: Ronald</h1>
     <!-- ≃≃≃# Textos explicativos -->
     <section class="section_intro">
       <p>
@@ -74,7 +78,7 @@
         <p>
           Esse aqui é meu "Olá Mundo!". Bem simples, eu sei, eu sei...Mas a vida
           é assim, todo mundo começa no primeiro degrau. Foi meu primeiro
-          contato com os tais de HTML/CSS, e foi bem confuso. Tá escrito "Olá
+          contato profundo com o tal de CSS e foi bem confuso. Tá escrito "Olá
           Mundo!" , mas por dentro eu tava "Que se exploda o mundo!"
         </p>
       </article>
@@ -88,9 +92,9 @@
           /></a>
         </figure>
         <p>
-          Esse print aí é de uma projetinho focado na marcação de um site.
-          Bonito ? Não tá. Mas tá bem feitinho. Aprendendo aí umas tags em html,
-          coisa pouca. Quem é Enzo Pascal ? Só Deus sabe ...
+          Esse print aí é de um projetinho focado na marcação de um site. Bonito
+          ? Não tá. Mas tá bem feitinho. Aprendendo aí umas tags em html, coisa
+          pouca. Quem é Enzo Pascal ? Só Deus sabe ...
         </p>
       </article>
       <hr />
@@ -103,12 +107,12 @@
           /></a>
         </figure>
         <p>
-          Agora a coisa começou a ficar séria! Agora já tem até fotinha :). Mas
-          sério, esse contato com o css foi fundamental, com ele comecei a
-          entender um pouco da lógica do css. É claro, teve muito teste: é
-          margem negativa de lá, padding pra fazer o elemento crescer de cá,
-          coloca pixel, tira pixel... O importante é que ao final eu aprendi
-          bastante.
+          Agora a coisa começou a ficar séria! Agora já tem até fotinha :)
+          &nbsp&nbsp Mas sério, esse contato com o css foi fundamental, com ele
+          comecei a entender um pouco da lógica do css. É claro, teve muito
+          teste: é margem negativa de lá, padding pra fazer o elemento crescer
+          de cá, coloca pixel, tira pixel... O importante é que ao final eu
+          aprendi bastante.
         </p>
       </article>
       <hr />
@@ -120,10 +124,10 @@
         </figure>
         <p>
           Próximo projetinho foi criar o Wordle, vários elementos pra ordernar,
-          cor pra colocar. A página do Wordle foi estática, zero animações, o
-          objetivo era fazer o layout o mais próximo possível de um print do
-          site original. O objetivo era treinar os olhos em relação ao tamanho
-          dos elementos, tipos de fonts e tal.
+          cor pra colocar. A página do Wordle foi estática, zero animações, era
+          pra fazer o layout o mais próximo possível de um print do site
+          original, com objetivo de treinar os olhos em relação ao tamanho dos
+          elementos, tipos de fontes etc.
         </p>
       </article>
       <hr />
@@ -137,8 +141,8 @@
         </figure>
         <p>
           Tá bonitinho, né? Eu sei, eu sei. Agora já entendendo um pouquinho
-          mais de css (o bastante para não usar margin negativa!). "Aaaaah mas
-          não semântico, Ronald!". Tá bom, nem tudo é perfeito... Mas o
+          mais de css (o bastante para não usar margem negativa!). "Aaaaah mas
+          não tá semântico, Ronald!". Tá bom, nem tudo é perfeito... O
           importante é que tá responsivo. Cheio de lorem ipsum? sim, mas não
           foca no conteúdo, só no estilo. Na verdade, não foca muito em nada
           não, pra você não achar defeito.
@@ -156,19 +160,21 @@
         </figure>
         <p>
           Desafio do FrontEnd mentor aí. Responsivo, bem simples, nem tem muito
-          o que falar. Na verdade, só é simples porquê ao longo do percurso fui
-          aprendendo bem as diversas feramentas do CSS: display flex, inline,
-          inline-block, margin, padding, medidas relativas, vmin, vmax, em, rem,
-          enfim, uma variedade enorme de recursos.
+          o que falar. Na verdade, foi bem tranquilo de fazer só porquê ao longo
+          do percurso fui aprendendo bem as diversas feramentas do CSS: display
+          flex, inline, inline-block, margin, padding, medidas relativas, vmin,
+          vmax, em, rem, enfim, uma variedade enorme de recursos.
         </p>
       </article>
       <hr />
     </main>
 
-    <footer>
+    <footer id="contato">
       <ul>
         <li>
-          <a><i class="fa-brands fa-github"></i></a>Git Hub
+          <a href="https://github.com/Ronald-ps"
+            ><i class="fa-brands fa-github"></i></a
+          >Git Hub
         </li>
 
         <li>
@@ -180,7 +186,9 @@
         </li>
 
         <li>
-          <a><i class="fa-brands fa-linkedin"></i></a>LinkedIn
+          <a href="https://www.linkedin.com/in/ronald-p-seabra-49b107229"
+            ><i class="fa-brands fa-linkedin"></i></a
+          >LinkedIn
         </li>
       </ul>
     </footer>

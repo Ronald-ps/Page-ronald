@@ -52,11 +52,15 @@
     background-color: #455ee1;
   }
 
+  h1 {
+    font-family: "Caveat", cursive;
+    opacity: 0.5;
+  }
   /* ≃+------------------------------------- */
   /* ≃≃# Navegadora Lateral */
   .nav_lateral {
     position: fixed;
-    top: calc(50vh - 12.5vh);
+    top: calc(23vh - 12.5vh);
     right: 3px;
     display: flex;
     flex-direction: column;
@@ -128,11 +132,16 @@
     font-weight: 500;
   }
 
-  span {
+  .nav_superior a {
     padding: 0 1ch;
     font-size: 0.8em;
     display: inline-block;
     color: white;
+    text-decoration: none;
+  }
+
+  .nav_superior a:hover {
+    color: #1c2551;
   }
 
   /* ≃≃# SECTION INTRO: Textos de introducao no comeco  */
@@ -270,11 +279,17 @@
   footer li a {
     display: block;
     text-align: center;
+    text-decoration: none;
+    color: #fff;
   }
   footer li {
     display: inline-block;
     font-size: 0.6em;
     color: #fff;
     font-weight: 600;
+  }
+
+  footer li:hover {
+    color: #455ee1;
   }
 }
