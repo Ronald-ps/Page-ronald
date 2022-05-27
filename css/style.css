@@ -1,7 +1,8 @@
 /* ≃# Importaçoes */
 
 @import url("http://fonts.cdnfonts.com/css/futura-lt");
-@import url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
+/* ~@import url("https://fonts.googleapis.com/css2?family=Benne&display=swap"); */
+@import url("//db.onlinewebfonts.com/c/0f106940a384f214837a8df504786e1a?family=Formular");
 
 @import url(./reset.css);
 @import url(./keyframes.css);
@@ -10,181 +11,270 @@
 
 /* ≃≃# Designs gerais */
 /* ≃+  Estilização de vários arquivos de uma vez*/
-body {
-  font-family: "Benne", cursive;
-  color: #333333;
-}
+@media screen {
+  html {
+    scroll-behavior: smooth;
+  }
 
-/* @ */
-hr {
-  background-color: #fb1283;
-  height: 1px;
-  margin: 0 auto 80px auto;
-  animation: hr_width ease-in-out 5s infinite;
-}
+  body {
+    font-family: "Red Hat Text", sans-serif;
+    color: rgba(0, 0, 0, 0.6);
+  }
 
-/* ≃+------------------------------------- */
-/* ≃≃# Navegadora Lateral */
-.nav_lateral {
-  position: fixed;
-  top: calc(50vh - 90px);
-  right: 3px;
-  display: flex;
-  flex-direction: column;
-  width: 48px;
-  height: 180px;
-  opacity: 0.2;
-}
+  /* @ */
+  hr {
+    border: none;
+    height: 0.2px;
+    margin: 0 auto 80px auto;
+    animation: hr_width ease-in-out 5s infinite;
+  }
+  hr:nth-of-type(1) {
+    background-color: #f36a71;
+  }
 
-/* ≃*Nav lateral em hover */
-.nav_lateral:hover {
-  opacity: 1;
-}
+  hr:nth-of-type(2) {
+    background-color: yellow;
+  }
 
-.nav_lateral a {
-  margin: 3px auto;
-  box-sizing: border-box;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  border-bottom: black solid 5px;
-  border-top: black solid 5px;
-  animation: rotate 6s ease-in-out infinite;
-}
-/* ≃≃≃# Círculos da nav lateral: */
-.pink {
-  border-right: #f36a71 solid 5px;
-  border-left: solid 5px #f36a71;
-}
-.white {
-  border-right: yellow solid 5px;
-  border-left: solid 5px yellow;
-}
-.green {
-  border-right: #00a78e solid 5px;
-  border-left: solid 5px #00a78e;
-}
-.gray {
-  border-right: #787c7e solid 5px;
-  border-left: solid 5px #787c7e;
-}
-.blue {
-  border-right: #374676 solid 5px;
-  border-left: solid 5px #374676;
-}
-.blueviolet {
-  border-right: #455ee1 solid 5px;
-  border-left: solid 5px #455ee1;
-}
+  hr:nth-of-type(3) {
+    background-color: #00a78e;
+  }
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/* ≃≃≃# Section e a Main */
-.section_intro {
-  width: 100%;
-  padding: 6%;
-}
+  hr:nth-of-type(4) {
+    background-color: #787c7e;
+  }
 
-/* ≃≃≃# BARRA DE NAVEGÇAO SUPERIOR */
-.nav_superior {
-  display: flex;
-  height: 3em;
-  width: 100%;
-  justify-content: start;
-  align-items: center;
-  background-color: #333333;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
+  hr:nth-of-type(5) {
+    background-color: #374676;
+  }
 
-span {
-  padding: 0 1ch;
-  font-size: 0.8em;
-  font-family: "Futura LT", sans-serif;
-  display: inline-block;
-  color: white;
-}
+  hr:nth-of-type(6) {
+    background-color: #455ee1;
+  }
 
-/* ≃≃# SECTION INTRO: Textos de introducao no comeco  */
-.section_intro {
-  text-align: justify;
-}
+  /* ≃+------------------------------------- */
+  /* ≃≃# Navegadora Lateral */
+  .nav_lateral {
+    position: fixed;
+    top: calc(50vh - 12.5vh);
+    right: 3px;
+    display: flex;
+    flex-direction: column;
+    width: 16vw;
+    height: 25vh;
+  }
 
-.section_intro p {
-  margin-bottom: 0.5rem;
-}
+  /* ≃*Nav lateral em hover */
+  .nav_lateral:hover > .item_lateral {
+    opacity: 1;
+    animation: none;
+  }
 
-.section_intro ul {
-  margin: 42px 0;
-}
+  .nav_lateral a {
+    margin: 3px auto;
+    box-sizing: border-box;
+    width: 70%;
+    height: 40px;
+    border-radius: 20px;
+    border-bottom: black solid 5px;
+    border-right: black solid 5px;
+    animation: rotate 14s ease-in-out infinite;
+    opacity: 0.1;
+  }
 
-.section_intro li {
-  display: inline-block;
-  padding: 0.4em;
-  color: #000000;
-}
+  /* ≃≃≃# Círculos da nav lateral: */
+  .pink {
+    border-top: #f36a71 solid 5px;
+    border-left: solid 5px #f36a71;
+  }
+  .white {
+    border-top: yellow solid 5px;
+    border-left: solid 5px yellow;
+  }
+  .green {
+    border-top: #00a78e solid 5px;
+    border-left: solid 5px #00a78e;
+  }
+  .gray {
+    border-top: #787c7e solid 5px;
+    border-left: solid 5px #787c7e;
+  }
+  .blue {
+    border-top: #374676 solid 5px;
+    border-left: solid 5px #374676;
+  }
+  .blueviolet {
+    border-top: #455ee1 solid 5px;
+    border-left: solid 5px #455ee1;
+  }
 
-/* ≃≃# Main: projetos */
-main {
-  width: 100%;
-}
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
 
-.article_projetos {
-  padding-bottom: 5em;
-}
+  /* ≃≃≃# BARRA DE NAVEGÇAO SUPERIOR */
+  .nav_superior {
+    display: flex;
+    height: 3em;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-weight: 500;
+  }
 
-/* ≃≃≃#Article projetos por COR , definindo BORDAS*/
-#pink {
-  border-left: solid 4.3px #f36a71;
-}
-#green {
-  border-left: solid 4.3px #00a78e;
-}
-#white {
-  border-left: solid 4.3px yellow;
-}
-#blue {
-  border-left: solid 4.3px #374676;
-}
-#gray {
-  border-left: solid 4.3px #787c7e;
-}
-#blueviolet {
-  border-left: solid 4.3px #455ee1;
-}
+  span {
+    padding: 0 1ch;
+    font-size: 0.8em;
+    display: inline-block;
+    color: white;
+  }
 
-/* ≃≃≃# Título */
-main h2 {
-  text-align: Center;
-  font-size: 2em;
-  font-family: "Futura LT";
-  color: #e93f91;
-  margin: 0.2em 0 1.2em 0;
-}
+  /* ≃≃# SECTION INTRO: Textos de introducao no comeco  */
+  /* ≃≃≃# Section e a Main */
+  .section_intro {
+    width: 100%;
+    padding: 6%;
+    /* font-size: em; */
+  }
 
-/* ≃≃≃# Figura dos articles/img projetos */
-.fgr_projeto {
-  text-align: center;
-  /* padding: 1em; */
-  background-image: url(../img/backgroundproj.jpg);
-  padding: 1.3em;
-}
+  .section_intro {
+    text-align: justify;
+  }
 
-.img_projeto {
-  transform: rotateZ(-8deg);
-  width: 70vmin;
-  border-radius: 2.7px;
-}
+  .section_intro p {
+    font-size: 0.8em;
+    margin-bottom: 0.5rem;
+  }
 
-/* ≃≃≃# Descrição dos proejetos */
-/* ≃+ Vários : todos os parágrafos dos artcles */
+  .section_intro ul {
+    margin: 42px 0;
+    padding: 0 0 0 1.2em;
+  }
 
-.article_projetos > p {
-  width: 100%;
-  margin-top: 0.6em;
-  padding: 6%;
+  .section_intro li {
+    font-size: 0.83em;
+
+    color: #000000;
+  }
+  .section_intro li:not(:last-of-type) {
+    margin-bottom: 25px;
+  }
+
+  /* ≃≃# Main: projetos */
+  main {
+    width: 100%;
+  }
+
+  .article_projetos {
+    padding-bottom: 1em;
+  }
+
+  /* ≃≃≃#Article projetos por COR , definindo BORDAS*/
+  #pink {
+    border-left: solid 8px #f36a71;
+  }
+  #pink img {
+    border: solid 8px #e84b53;
+  }
+
+  #green {
+    border-left: solid 8px #00a78e;
+  }
+  #green img {
+    border: solid 8px #00a78e;
+  }
+
+  #white {
+    border-left: solid 8px yellow;
+  }
+  #white img {
+    border: solid 8px yellow;
+  }
+
+  #blue {
+    border-left: solid 8px #374676;
+  }
+  #blue img {
+    border: solid 8px #374676;
+  }
+
+  #gray {
+    border-left: solid 8px #787c7e;
+  }
+  #gray img {
+    border: solid 8px #787c7e;
+  }
+
+  #blueviolet {
+    border-left: solid 8px #455ee1;
+  }
+  #blueviolet img {
+    border: solid 4.3px #455ee1;
+  }
+
+  /* ≃≃≃# Título */
+  main h2 {
+    text-align: Center;
+    font-size: 2em;
+    /* font-family: "Futura LT"; */
+    color: #e93f91;
+    margin: 0.2em 0 1.2em 0;
+  }
+
+  /* ≃≃≃# Figura dos articles/img projetos */
+  .fgr_projeto {
+    text-align: center;
+    /* padding: 1em; */
+    background-image: url(../img/backgroundproj.jpg);
+    padding: 1.3em;
+    margin: auto;
+  }
+
+  .img_projeto {
+    width: 70vmin;
+    max-width: 430px;
+    border-radius: 2.7px;
+  }
+
+  .img_projeto:hover {
+    transform: rotateZ(-13deg);
+  }
+
+  /* ≃≃≃# Descrição dos proejetos */
+  /* ≃+ Vários : todos os parágrafos dos artcles */
+
+  .article_projetos > p {
+    width: 100%;
+    margin-top: 0.6em;
+    padding: 6%;
+    font-size: 0.7em;
+  }
+
+  /* ≃≃# Footer */
+  footer {
+    padding: 1em 0;
+    background-color: #333333;
+  }
+
+  footer ul {
+    display: flex;
+    height: 5em;
+    justify-content: space-around;
+  }
+  footer li a {
+    display: block;
+    text-align: center;
+  }
+  footer li {
+    display: inline-block;
+    font-size: 0.6em;
+    color: #fff;
+    font-weight: 600;
+  }
 }
