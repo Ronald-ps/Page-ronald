@@ -2,9 +2,33 @@
 
 @import url("http://fonts.cdnfonts.com/css/futura-lt");
 @import url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
+
 @import url(./reset.css);
+@import url(./keyframes.css);
 
 /* ≃# Design */
+
+/* ≃≃# Designs gerais */
+/* ≃+  Estilização de vários arquivos de uma vez*/
+body {
+  font-family: "Benne", cursive;
+  color: #333333;
+}
+
+hr {
+  background-color: #e93f91;
+  height: 1px;
+  margin: 20px auto;
+  animation: hr_width ease-in-out 3s infinite;
+}
+
+/* ≃+------------------------------------- */
+
+/* ≃≃≃# Section e a Main */
+.section_intro {
+  width: 100%;
+  padding: 6%;
+}
 
 /* ≃≃≃# BARRA DE NAVEGÇAO SUPERIOR */
 .nav_superior {
@@ -26,5 +50,59 @@ span {
 
 /* ≃≃# SECTION INTRO: Textos de introducao no comeco  */
 .section_intro {
-  font-family: "Benne", cursive;
+  text-align: justify;
+}
+
+.section_intro p {
+  margin-bottom: 0.5rem;
+}
+
+.section_intro ul {
+  margin: 42px 0;
+}
+
+.section_intro li {
+  display: inline-block;
+  padding: 0.4em;
+  color: #000000;
+}
+
+/* >git  MAKED: section introdutória com texto e paddings estilizados, cor de texto 3333333. WILL: escolher uma fonta mais parecida com --Fern Micro-- ;2750120 */
+/* >git PAST: cor definida para o titulo projetos */
+/* ≃≃# Main: projetos */
+main {
+  width: 100%;
+}
+
+/* ≃≃≃# Título */
+main h2 {
+  text-align: Center;
+  font-size: 2em;
+  font-family: "Futura LT";
+  color: #e93f91;
+  margin: 0.2em 0 1.2em 0;
+}
+
+/* ≃≃≃# Figura dos articles/img projetos */
+.fgr_projeto {
+  text-align: center;
+  /* padding: 1em; */
+  background-image: url(../img/backgroundproj.jpg);
+  padding: 1.3em;
+}
+
+/* >git PAST: adicionado fundo à imagem. inserido hr entre articles.  padding adiconado nos próprios paragrafos. criado animação que muda o tamanho das minhas hr. 27050227 */
+.img_projeto {
+  transform: rotateZ(-8deg);
+  width: 70vmin;
+  border-radius: 2.7px;
+}
+
+/* ≃≃≃# Descrição dos proejetos */
+/* ≃+ Vários : todos os parágrafos dos artcles */
+
+.article_projetos > p {
+  width: 100%;
+  margin-top: 0.6em;
+  padding: 6%;
 }

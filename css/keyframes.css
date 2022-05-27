@@ -1,0 +1,17 @@
+@keyframes hr_width {
+  0% {
+    width: 30%;
+    height: 0.1px;
+    opacity: 0.8;
+  }
+  50% {
+    width: 80%;
+    height: 1px;
+    opacity: 1;
+  }
+  100% {
+    width: 30%;
+    height: 0.1px;
+    opacity: 0.8;
+  }
+}
