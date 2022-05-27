@@ -1,0 +1,30 @@
+/* ≃# Importaçoes */
+
+@import url("http://fonts.cdnfonts.com/css/futura-lt");
+@import url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
+@import url(./reset.css);
+
+/* ≃# Design */
+
+/* ≃≃≃# BARRA DE NAVEGÇAO SUPERIOR */
+.nav_superior {
+  display: flex;
+  height: 3em;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+  background-color: #333333;
+}
+
+span {
+  padding: 0 1ch;
+  font-size: 0.8em;
+  font-family: "Futura LT", sans-serif;
+  display: inline-block;
+  color: white;
+}
+
+/* ≃≃# SECTION INTRO: Textos de introducao no comeco  */
+.section_intro {
+  font-family: "Benne", cursive;
+}
