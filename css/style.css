@@ -83,7 +83,7 @@
     border-bottom: black solid 5px;
     border-right: black solid 5px;
     animation: rotate 14s ease-in-out infinite;
-    opacity: 0.25;
+    opacity: 0.1;
   }
 
   /* ≃≃≃# Círculos da nav lateral: */
