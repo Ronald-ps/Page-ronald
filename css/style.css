@@ -60,7 +60,7 @@
   /* ≃≃# Navegadora Lateral */
   .nav_lateral {
     position: fixed;
-    top: calc(23vh - 12.5vh);
+    top: calc(60vh);
     right: 3px;
     display: flex;
     flex-direction: column;
@@ -82,8 +82,8 @@
     border-radius: 20px;
     border-bottom: black solid 5px;
     border-right: black solid 5px;
-    animation: rotate 14s ease-in-out infinite;
-    opacity: 0.1;
+    animation: rotate 24s ease-in-out infinite;
+    opacity: 0.01;
   }
 
   /* ≃≃≃# Círculos da nav lateral: */
@@ -200,10 +200,10 @@
   }
 
   #white {
-    border-left: solid 8px yellow;
+    border-left: solid 8px bisque;
   }
   #white img {
-    border: solid 8px yellow;
+    border: solid 8px bisque;
   }
 
   #blue {
