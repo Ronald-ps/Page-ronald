@@ -70,7 +70,7 @@
 
   /* ≃*Nav lateral em hover */
   .nav_lateral:hover > .item_lateral {
-    opacity: 0.8;
+    opacity: 0.7;
     animation: none;
   }
 
@@ -83,7 +83,7 @@
     border-bottom: black solid 5px;
     border-right: black solid 5px;
     animation: rotate 24s ease-in-out infinite;
-    opacity: 0.01;
+    opacity: 0.1;
   }
 
   /* ≃≃≃# Círculos da nav lateral: */
